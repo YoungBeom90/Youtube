@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './App.css';
+import './app.css';
 import VideoList from './components/video_list/videoList';
 
 function App() {
