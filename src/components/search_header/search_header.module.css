@@ -22,13 +22,11 @@
 .input {
     flex-basis: 100%;
     font-size: 1.2rem;
-    outline: 0;
-    background-color: gray;
+    background-color: darkgray;
 }
 
 .button {
-    background-color: darkgray;
-    outline: 0;
+    background-color: gray;
 }
 
 .buttonImg {

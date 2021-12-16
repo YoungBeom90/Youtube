@@ -20,10 +20,15 @@ const SearchHeader = ({onSearch}) => {
             handleSearch();
         }
     }
+
+    const onClickLogo = () => {
+        console.log("onClickLogo");
+        window.location.href="/";
+    }
     
     return (
         <header className={styles.header}>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={onClickLogo}>
                 <img className={styles.image} src="/images/logo.png" alt="logo" />
                 <h1 className={styles.title}>YouTube</h1>
             </div>
