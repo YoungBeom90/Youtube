@@ -1,12 +1,20 @@
 import React from 'react'
+import styles from './video_item.module.css';
 
-const VideoItem = (props) => {
+const VideoItem = ({video : {snippet}}) => {
     return (
-        <li>
-            <img 
-                src={props.video.snippet.thumbnails.medium.url}
-                alt='video thumbnail'
-            />
+        <li className={styles.container}>
+            <div className={styles.video}>
+                <img
+                    className={styles.thumbnail}
+                    src={snippet.thumbnails.medium.url}
+                    alt='video thumbnail'
+                />
+                <div className={styles.metadata}>
+                    <p className={styles.title}>{snippet.title}</p>
+                    <p className={styles.channel}>{snippet.channelTitle}</p>
+                </div>
+            </div>
         </li>
     )
 }
