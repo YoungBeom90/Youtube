@@ -3,7 +3,7 @@ import styles from './search_header.module.css';
 import logo from '../../images/logo.png';
 import searchImg from '../../images/search.png';
 
-const SearchHeader = ({onSearch}) => {
+const SearchHeader = React.memo(({onSearch}) => {
     const inputRef = useRef();
 
     const handleSearch = () => {
@@ -25,7 +25,7 @@ const SearchHeader = ({onSearch}) => {
 
     const onClickLogo = () => {
         console.log("onClickLogo");
-        window.location.href="/";
+        window.location.href="/Youtube/";
     }
     
     return (
@@ -40,6 +40,6 @@ const SearchHeader = ({onSearch}) => {
             </button>
         </header>
     )
-}
+})
 
 export default SearchHeader;
