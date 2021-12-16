@@ -1,9 +1,9 @@
-import React, {useRef} from 'react'
+import React, {memo, useRef} from 'react'
 import styles from './search_header.module.css';
 import logo from '../../images/logo.png';
 import searchImg from '../../images/search.png';
 
-const SearchHeader = React.memo(({onSearch}) => {
+const SearchHeader = memo(({onSearch}) => {
     const inputRef = useRef();
 
     const handleSearch = () => {
